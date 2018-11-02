@@ -18,4 +18,4 @@
         temp = 'Negatif';
     }
 
-    console.log('Angka yang Anda input <b>' +angka+ '</b> adalah <b>' +hasil+ '</b> dan <b>' +temp+ '</b>');
+    console.log('Angka yang Anda input ' +angka+ ' adalah ' +hasil+ ' dan ' +temp);
