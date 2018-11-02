@@ -1,5 +1,3 @@
-
-    // var num = prompt('Input Angka :');
     var angka = -7;
     var hasil = '';
     var temp = '';
