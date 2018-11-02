@@ -1,0 +1,25 @@
+<script>
+var angka = prompt("Masukkan Angka disini :");
+
+if(angka > 0){
+
+  var tahun = parseInt(angka / 360);
+  
+  angka = angka % 360;
+  var bulan = parseInt(angka / 30);
+  
+  angka = angka % 30;
+  var minggu = parseInt(angka / 7);
+  
+  angka = angka % 7;
+  var hari = parseInt(angka);
+  
+  document.write("Tahun : " +tahun+ " Tahun <br>");
+  document.write("Bulan : " +bulan+ " Bulan <br>");
+  document.write("Minggu : " +minggu+ " Minggu <br>");
+  document.write("Hari : " +hari+ " Hari");
+  
+}else{
+  document.write(angka);
+}
+</script>

@@ -1,0 +1,46 @@
+<!-- CARA ke 1 -->
+<script>
+    var angkaTerbesar = prompt("Masukkan Angka Terbesar :");
+    var angkaTerkecil = prompt("Masukkan Angka Terkecil :");
+
+    var angka_min = Math.min(angkaTerbesar, angkaTerkecil);
+    var angka_max = Math.max(angkaTerbesar, angkaTerkecil);
+
+    angkaTerkecil = angka_min;
+    angkaTerbesar = angka_max;
+    
+    document.write("angka terkecil : " + angkaTerkecil + "<br>");
+    document.write("angka terbesar : " + angkaTerbesar);
+</script>
+
+
+<!-- CARA KE 2 -- Menggunakan IF -->
+<script>
+    var angkaTerbesar = prompt("Masukkan Angka Terbesar :");
+    var angkaTerkecil = prompt("Masukkan Angka Terkecil :");
+
+    if(angkaTerbesar < angkaTerkecil){
+        var angka_min = Math.min(angkaTerbesar, angkaTerkecil);
+        var angka_max = Math.max(angkaTerbesar, angkaTerkecil);
+
+        angkaTerkecil = angka_min;
+        angkaTerbesar = angka_max;
+    }
+    document.write("angka terkecil : " + angkaTerkecil + "<br>");
+    document.write("angka terbesar : " + angkaTerbesar);
+</script>
+
+
+<!-- CARA KE 3 -- Menggunakan IF ELSE-->
+<script>
+    var angkaTerbesar = prompt("Masukkan Angka Terbesar :");
+    var angkaTerkecil = prompt("Masukkan Angka Terkecil :");
+
+    if(angkaTerbesar < angkaTerkecil){
+        document.write("angka terkecil : " + angkaTerbesar + "<br>");
+        document.write("angka terbesar : " + angkaTerkecil);
+    }else{
+        document.write("angka terkecil : " + angkaTerkecil + "<br>");
+        document.write("angka terbesar : " + angkaTerbesar);
+    }
+</script>
