@@ -1,0 +1,54 @@
+<center>
+    <h1>FPB dan KPK</h1>
+
+    <h3>Faktor Persekutuan Besar & Kelipatan Persekutuan Kecil</h3>
+
+    <form>
+        Masukkan Angka 1 :<input id='inputAngka1' type='number'><br>
+        Masukkan Angka 2 :<input id='inputAngka2' type='number'><br>
+        
+    </form>
+    <button onclick='submitFpbKpk()'> Coba Klik </button>
+    <br><br>
+   <div style="font-size: 35px" id='hasil1'></div>
+</center>
+<script>
+
+    function submitFpbKpk() {
+
+        var angka1 = parseInt(document.getElementById('inputAngka1').value);
+        var angka2 = parseInt(document.getElementById('inputAngka2').value);
+
+        // KPK
+        var a, b, c = angka1 * angka2, d;
+
+        for (var i = 1; i <= c; i++) {
+            a = i % angka1;
+            b = i % angka2;
+
+            if (a == 0 && b == 0) {
+                d = i;
+                break;
+            }
+        }
+        
+        var text1 = '<b> dan KPK = ' +d+ '</b>';
+        // document.getElementById('hasil1').innerHTML = text1;
+        // console.log('KPK : ' + d);
+    
+
+        //FPB
+        var num = angka1 % angka2;
+        while (num !== 0) {
+            angka1 = angka2;
+            angka2 = num;
+
+            // ini merupakan proses iterasi
+            num = angka1 % angka2;
+        }
+        // console.log('FPB : ' + angka2);
+        var text2 = '<b> FPB = ' +angka2+ '</b>'
+        document.getElementById('hasil1').innerHTML = text2+text1;
+
+    }
+</script>
