@@ -1,3 +1,4 @@
+//Piramid rowSumOddNumbers
 var rowSumOddNumbers = (num) => {
     var arr = [];
     var count =1;
