@@ -1,4 +1,4 @@
-// CARA 2
+// CARA 2 (hitung jumlah total di loop terakhir)
 var rowSumOddNumbers = (num) => {
     var arr = [];
     var count =1;
